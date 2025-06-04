@@ -361,7 +361,7 @@ const file_auth_proto_rawDesc = "" +
 	"\bRegister\x12\x15.auth.RegisterRequest\x1a\x12.auth.AuthResponse\x12/\n" +
 	"\x05Login\x12\x12.auth.LoginRequest\x1a\x12.auth.AuthResponse\x123\n" +
 	"\aRefresh\x12\x14.auth.RefreshRequest\x1a\x12.auth.AuthResponse\x12H\n" +
-	"\rValidateToken\x12\x1a.auth.ValidateTokenRequest\x1a\x1b.auth.ValidateTokenResponseB7Z5github.com/zakhareev/forum-project/forum-common/pb;pbb\x06proto3"
+	"\rValidateToken\x12\x1a.auth.ValidateTokenRequest\x1a\x1b.auth.ValidateTokenResponseB)Z'github.com/zakhareev/forum-common/pb;pbb\x06proto3"
 
 var (
 	file_auth_proto_rawDescOnce sync.Once

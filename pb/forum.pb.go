@@ -960,7 +960,7 @@ const file_forum_proto_rawDesc = "" +
 	"CreatePost\x12\x18.forum.CreatePostRequest\x1a\x13.forum.PostResponse\x12>\n" +
 	"\tListPosts\x12\x17.forum.ListPostsRequest\x1a\x18.forum.ListPostsResponse\x12D\n" +
 	"\rCreateComment\x12\x1b.forum.CreateCommentRequest\x1a\x16.forum.CommentResponse\x12G\n" +
-	"\fListComments\x12\x1a.forum.ListCommentsRequest\x1a\x1b.forum.ListCommentsResponseB7Z5github.com/zakhareev/forum-project/forum-common/pb;pbb\x06proto3"
+	"\fListComments\x12\x1a.forum.ListCommentsRequest\x1a\x1b.forum.ListCommentsResponseB)Z'github.com/zakhareev/forum-common/pb;pbb\x06proto3"
 
 var (
 	file_forum_proto_rawDescOnce sync.Once

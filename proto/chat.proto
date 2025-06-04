@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package chat;
 
-option go_package = "github.com/zakhareev/forum-project/forum-common/pb;pb";
+option go_package = "github.com/zakhareev/forum-common/pb;pb";
 
 service Chat {
   rpc SendMessage (SendMessageRequest) returns (SendMessageResponse);

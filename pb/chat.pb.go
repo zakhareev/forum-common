@@ -344,7 +344,7 @@ const file_chat_proto_rawDesc = "" +
 	"\x04Chat\x12B\n" +
 	"\vSendMessage\x12\x18.chat.SendMessageRequest\x1a\x19.chat.SendMessageResponse\x12J\n" +
 	"\x0eStreamMessages\x12\x1b.chat.StreamMessagesRequest\x1a\x19.chat.ChatMessageResponse0\x01\x12T\n" +
-	"\x11DeleteOldMessages\x12\x1e.chat.DeleteOldMessagesRequest\x1a\x1f.chat.DeleteOldMessagesResponseB7Z5github.com/zakhareev/forum-project/forum-common/pb;pbb\x06proto3"
+	"\x11DeleteOldMessages\x12\x1e.chat.DeleteOldMessagesRequest\x1a\x1f.chat.DeleteOldMessagesResponseB)Z'github.com/zakhareev/forum-common/pb;pbb\x06proto3"
 
 var (
 	file_chat_proto_rawDescOnce sync.Once

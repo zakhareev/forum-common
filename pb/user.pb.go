@@ -439,7 +439,7 @@ const file_user_proto_rawDesc = "" +
 	"UpdateUser\x12\x17.user.UpdateUserRequest\x1a\x12.user.UserResponse\x12?\n" +
 	"\n" +
 	"DeleteUser\x12\x17.user.DeleteUserRequest\x1a\x18.user.DeleteUserResponse\x123\n" +
-	"\aSetRole\x12\x14.user.SetRoleRequest\x1a\x12.user.UserResponseB7Z5github.com/zakhareev/forum-project/forum-common/pb;pbb\x06proto3"
+	"\aSetRole\x12\x14.user.SetRoleRequest\x1a\x12.user.UserResponseB)Z'github.com/zakhareev/forum-common/pb;pbb\x06proto3"
 
 var (
 	file_user_proto_rawDescOnce sync.Once
