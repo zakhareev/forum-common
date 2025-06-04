@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package chat;
+
+option go_package = "github.com/zakhareev/forum-project/forum-common/pb;pb";
+
+service Chat {
+  rpc SendMessage (SendMessageRequest) returns (SendMessageResponse);
+  rpc StreamMessages (StreamMessagesRequest) returns (stream ChatMessageResponse);
+  rpc DeleteOldMessages (DeleteOldMessagesRequest) returns (DeleteOldMessagesResponse);
+}
+
+message SendMessageRequest {
+  int64 author_id = 1;
+  string content = 2;
+}
+message SendMessageResponse {
+  bool ok = 1;
+}
+
+message StreamMessagesRequest {
+  int64 since = 1;
+}
+
+message ChatMessageResponse {
+  int64 id = 1;
+  int64 author_id = 2;
+  string content = 3;
+  int64 created_at = 4;
+}
+
+message DeleteOldMessagesRequest {
+  int64 older_than = 1;
+}
+message DeleteOldMessagesResponse {
+  int32 deleted = 1;
+}

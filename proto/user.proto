@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "github.com/zakhareev/forum-project/forum-common/pb;pb";
+
+service User {
+  rpc GetUser (GetUserRequest) returns (UserResponse);
+  rpc CreateUser (CreateUserRequest) returns (UserResponse);
+  rpc UpdateUser (UpdateUserRequest) returns (UserResponse);
+  rpc DeleteUser (DeleteUserRequest) returns (DeleteUserResponse);
+  rpc SetRole (SetRoleRequest) returns (UserResponse);
+}
+
+message GetUserRequest {
+  int64 id = 1;
+}
+
+message CreateUserRequest {
+  string username = 1;
+  string password = 2;
+  string role = 3;
+}
+
+message UpdateUserRequest {
+  int64 id = 1;
+  string username = 2;
+  string password = 3;
+  string role = 4;
+}
+
+message DeleteUserRequest {
+  int64 id = 1;
+}
+
+message SetRoleRequest {
+  int64 id = 1;
+  string role = 2;
+}
+
+message UserResponse {
+  int64 id = 1;
+  string username = 2;
+  string role = 3;
+  int64 created_at = 4;
+}
+
+message DeleteUserResponse {
+  bool ok = 1;
+}
